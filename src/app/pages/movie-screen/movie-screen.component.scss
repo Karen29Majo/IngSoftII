@@ -1,0 +1,23 @@
+.portada {
+  width: 80%;
+  border-radius: 20px;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pelicula {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.txt {
+  margin-right: 5%;
+}
+
+.click {
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <!-- Table -->
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-header bg-transparent">
+                        <div class="row">
+                            <div class="col-4"> </div>
+                            <div class="col-8">
+                                <form [formGroup]="movie">
+                                    <input class="form-control" (keyup)="filter()" formControlName="name" type="text"
+                                        placeholder="Search movie">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="grid">
+                            <ng-container *ngFor="let m of moviesFiltered">
+                                <app-movie class="mb-5" [name]="m.name"></app-movie>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

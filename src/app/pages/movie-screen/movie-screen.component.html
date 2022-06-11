@@ -1,0 +1,33 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <!-- Table -->
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="row pelicula">
+                        <div>
+
+                        </div>
+                        <div class="col-4 text-center">
+                            <img class="portada" src="../../../assets/movies/{{nombre}}.jpg">
+                        </div>
+                        <div class="col-8">
+                            <div class="txt">
+                                <h1>{{nombre}}</h1>
+                                <hr>
+                                <br>
+                                <p>{{desc}}</p>
+
+                                <br>
+                                <br>
+                                <div class="click">
+                                    <p (click)="routing()"><i class="ni ni-bold-left"></i> Go Back</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
